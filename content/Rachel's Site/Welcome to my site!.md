@@ -10,7 +10,7 @@
    
    I am open to new possibilities — my diverse professional experience provides a strong foundation for future growth. If you’d like to connect — whether for professional opportunities, collaboration, or shared interests — feel free to reach out. 
    
-#### Want to know more about me? Click on the following links!
+#### Something more about me:
 - [[My Working Experiences]]
 - [[My Academic Experiences]]
 - A Collection of [[My Short Poems]]
