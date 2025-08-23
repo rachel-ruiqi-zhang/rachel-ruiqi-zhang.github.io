@@ -1,0 +1,14 @@
+@use "./base.scss";
+
+// put your custom CSS here!
+
+.markdown pre {
+  white-space: pre-wrap;
+  font-family: "Times New Roman", "KaiTi", "STKaiti", "SimSun", serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 1em 0;
+}
