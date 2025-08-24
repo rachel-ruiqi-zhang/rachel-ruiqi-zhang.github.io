@@ -79,3 +79,17 @@ header, .header, footer { background: var(--bg); border: 0; }
 .explorer li { margin: .12rem 0; }
 .explorer summary, .explorer .folder > a, .explorer .folder-title { font-weight: 600 !important; }
 
+.page-title a {
+  display: inline-block;
+  font-size: 0 !important;
+  line-height: 1.2;
+}
+.page-title a::after {
+  content: "Rachel's Site";
+  font-size: 1.75rem;
+  font-family: Garamond, "Times New Roman", Georgia, serif;
+  font-weight: 500;
+  letter-spacing: .2px;
+  color: inherit;
+}
+

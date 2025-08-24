@@ -39,7 +39,7 @@ export const defaultContentPageLayout: PageLayout = {
       ],
     }),
     Component.Explorer({
-      title: "Explorer",
+      title: "",
       sortFn: (a, b) => {
         const order = new Map<string, number>([
           ["welcome to my site!", 0],
@@ -83,7 +83,7 @@ export const defaultListPageLayout: PageLayout = {
       ],
     }),
     Component.Explorer({
-      title: "Explorer",
+      title: "",
       sortFn: (a, b) => {
         const order = new Map<string, number>([
           ["welcome to my site!", 0],
