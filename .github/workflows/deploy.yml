@@ -29,7 +29,7 @@ jobs:
       - name: Install deps
         run: npm ci
       - name: Build Quartz
-        run: npx -y quartz@latest build
+        run: npx -y @jackyzha0/quartz@latest build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
