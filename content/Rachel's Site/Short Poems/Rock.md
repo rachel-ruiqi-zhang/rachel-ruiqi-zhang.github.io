@@ -6,7 +6,7 @@ to a kingdom unknown
 but awaiting as destined.
 If only I had an anchor—
 if only I can...
-become a rock amidst the stream.
+be a rock amidst the stream.
 
 Albeit in perplexity,
 I shall wait,
