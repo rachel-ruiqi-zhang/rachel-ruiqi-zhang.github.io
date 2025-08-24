@@ -1,5 +1,5 @@
 ---
-title: A Site of My Own
+title: Welcome to my site!
 ---
    Hi, I'm Rachel (Ruiqi) Zhang. I’m a language and communication specialist with a focus on translation, interpreting, and content development across cultural and linguistic boundaries. With a foundation in English Studies from Beijing Language and Culture University and current postgraduate study in Literature and Modernity at the University of Edinburgh, I work at the intersection of language, media, and meaning — helping ideas travel fluently across borders.  
    
@@ -12,7 +12,7 @@ title: A Site of My Own
    Outside of work, I enjoy creative writing, wandering in nature, occasionally editing videos, and learning through side projects — like using a new platform and build this website from the ground up. It’s been an opportunity to stretch both my technical and creative muscles, and a reflection of how I approach challenges: hands-on, curious, and persistent. 
    
    I am open to new possibilities — my diverse professional experience provides a strong foundation for future growth. If you’d like to connect — whether for professional opportunities, collaboration, or shared interests — feel free to reach out. 
-#### Want to know more about me? Click on the following links!
+#### See more about me here:
 - [[My Working Experiences]]
 - [[My Academic Experiences]]
 - A Collection of [[My Short Poems]]
