@@ -12,3 +12,70 @@
   padding: 0;
   margin: 1em 0;
 }
+
+/* === Clean theme (no dark mode) === */
+:root{
+  --bg: #f6f5ed;         /* page background */
+  --surface: #f6f5ed;    /* cards / explorer */
+  --text: #111111;
+  --muted: #666a70;
+  --accent: #0f3d5e;     /* link color */
+  --accent-weak: #2a6ea9;/* link hover */
+  --border: #eaeaea;
+  --read-width: 72ch;    /* readable width */
+}
+
+/* base colors & typography */
+html, body { background: var(--bg); color: var(--text); }
+body, .markdown, .prose, .content, .content * {
+  font-family: Georgia, "Times New Roman", Times, serif !important;
+  line-height: 1.8;
+  font-size: 1.04rem;
+}
+
+/* headings */
+h1, h2, h3, h4, .article-title, .page-title {
+  font-family: Garamond, "Times New Roman", Georgia, serif !important;
+  font-weight: 500;
+  letter-spacing: .2px;
+  margin-top: 1.6em;
+}
+h1{font-size:2rem} h2{font-size:1.6rem} h3{font-size:1.25rem}
+
+/* readable width only for article body */
+.page .content > article { max-width: var(--read-width); margin-inline: auto; }
+
+/* links */
+a, .markdown a, .prose a {
+  color: var(--accent) !important;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+a:hover { color: var(--accent-weak) !important; }
+
+/* blocks */
+blockquote { border-left: 3px solid var(--accent); padding: .5rem 1rem; background: #f7fbff; }
+code, pre { background: #f8f8f8; border: 1px solid var(--border); }
+pre { white-space: pre-wrap; }
+
+/* sidebar cards */
+.explorer, .left .card, .left .panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: .55rem .75rem;
+}
+
+/* header/footer */
+header, .header, footer { background: var(--bg); border: 0; }
+
+/* meta */
+.content-meta, .tag-list { color: var(--muted); }
+
+/* lighter Explorer nav */
+.explorer { font-size: .95rem; line-height: 1.5; }
+.explorer a { font-weight: 400 !important; text-decoration: none !important; }
+.explorer a:hover { text-decoration: underline !important; text-underline-offset: 2px; }
+.explorer li { margin: .12rem 0; }
+.explorer summary, .explorer .folder > a, .explorer .folder-title { font-weight: 600 !important; }
+

@@ -8,7 +8,7 @@
    
    Outside of work, I enjoy creative writing, wandering in nature, occasionally editing videos, and learning through side projects — like using a new platform and build this website from the ground up. It’s been an opportunity to stretch both my technical and creative muscles, and a reflection of how I approach challenges: hands-on, curious, and persistent. 
    
-   I am open to new possibilities — my diverse professional experience provides a strong foundation for future growth. If you’d like to connect — whether for professional opportunities, collaboration, or shared interests — feel free to reach out. 
+   I am open to new possibilities — my diverse professional experience provides a strong foundation for future growth. If you’d like to connect — whether for professional opportunities, collaboration, or shared interests — feel free to reach out. My email is ruiqizhang1213@outlook.com.
    
 #### Something more about me:
 - [[My Working Experiences]]
