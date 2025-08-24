@@ -38,7 +38,27 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      title: "Explorer",
+      sortFn: (a, b) => {
+        const order = new Map<string, number>([
+          ["welcome to my site!", 0],
+          ["my working experiences", 1],
+          ["my academic experiences", 2],
+          ["my short poems", 3],
+          ["videos and others", 4],
+          ["short poems", 5],
+        ])
+        const an = (a.displayName ?? "").toLowerCase()
+        const bn = (b.displayName ?? "").toLowerCase()
+        const ra = order.get(an)
+        const rb = order.get(bn)
+        if (ra !== undefined && rb !== undefined) return ra - rb
+        if (ra !== undefined) return -1
+        if (rb !== undefined) return 1
+        return an.localeCompare(bn, undefined, { numeric: true, sensitivity: "base" })
+      },
+    }),
   ],
   right: [
     Component.Graph(),
@@ -62,7 +82,28 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      title: "Explorer",
+      sortFn: (a, b) => {
+        const order = new Map<string, number>([
+          ["welcome to my site!", 0],
+          ["my working experiences", 1],
+          ["my academic experiences", 2],
+          ["my short poems", 3],
+          ["videos and others", 4],
+          ["short poems", 5],
+        ])
+        const an = (a.displayName ?? "").toLowerCase()
+        const bn = (b.displayName ?? "").toLowerCase()
+        const ra = order.get(an)
+        const rb = order.get(bn)
+        if (ra !== undefined && rb !== undefined) return ra - rb
+        if (ra !== undefined) return -1
+        if (rb !== undefined) return 1
+        return an.localeCompare(bn, undefined, { numeric: true, sensitivity: "base" })
+      },
+    }),
   ],
   right: [],
 }
+
