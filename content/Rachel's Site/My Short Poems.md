@@ -1,13 +1,15 @@
 This is a collection of my short poems, also including a translational attempt and some micro poems I wrote when inspirations flashed by. I write in both Chinese and English, but the versions may not be identical with each other, because each language has their own senses.
-- [[Full Fathom Five Thy Father Lies]]
-- [[Shall We Fortune Our Moments Of The Day]]
-- [[Guess What's Spork]]
-- [[In The Library]]
+
+- [[Arthur's Seat]]
 - [[Can An Un-stringed Kite Become A Bird]]
 - [[Chains]]
-- [[Arthur's Seat]]
-- [[Rock]]
-- [[On The Road]]
+- [[Full Fathom Five Thy Father Lies]]
+- [[Guess What's Spork]]
 - [[Honest Heart]]
-- [[The Primary Taboo]]
+- [[In The Library]]
 - [[Micro Poems]]
+- [[On The Road]]
+- [[Rock]]
+- [[Shall We Fortune Our Moments Of The Day]]
+- [[The Primary Taboo]]
+
