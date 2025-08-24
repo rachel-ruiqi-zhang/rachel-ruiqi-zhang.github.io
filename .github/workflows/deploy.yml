@@ -1,45 +1,38 @@
 name: Deploy Quartz site to GitHub Pages
 
 on:
-  push:
-    branches: [v4]
-    paths:
-      - 'content/**'
-      - 'quartz/**'
-      - 'quartz.layout.ts'
-      - 'package.json'
-      - 'package-lock.json'
-      - '.github/workflows/deploy.yml'   # 修改部署脚本也触发
-  workflow_dispatch:
+  push:              # 任何分支推送都触发，避免漏触发
+  workflow_dispatch: # 也可在 Actions 页面手动触发
 
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# 每个分支单独的并发锁，新推送会自动取消旧 run
 concurrency:
   group: pages-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
-        with: { fetch-depth: 0 }
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
-          cache: 'npm'
+          node-version: 20     # LTS，CI 更稳
+          cache: npm
       - name: Install deps
         run: npm ci
       - name: Build Quartz
-        run: npx quartz build
+        run: npx -y quartz@latest build   # 关键：改成 npx -y quartz@latest
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
-        with: { path: public }
+        with:
+          path: public
 
   deploy:
     needs: build
@@ -49,6 +42,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
+      - id: deployment
         uses: actions/deploy-pages@v4
+
