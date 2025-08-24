@@ -1,0 +1,16 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Redirecting…</title>
+<script>
+(function () {
+  var path = location.pathname;
+  if (path.endsWith(".html")) return;
+  var base = path.replace(/\/$/, "");
+  var candidate = base + ".html" + location.search + location.hash;
+  fetch(candidate, { method: "HEAD" }).then(function (res) {
+    if (res.ok) location.replace(candidate);
+  }).catch(function () {});
+})();
+</script>
+<h1>Page Not Found</h1>
+<p>If you typed the URL directly, try adding <code>.html</code> at the end.</p>
