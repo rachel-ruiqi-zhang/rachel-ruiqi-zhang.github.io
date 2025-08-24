@@ -96,3 +96,71 @@ header, .header, footer { background: var(--bg); border: 0; }
 }
 .page-title a:hover::after { text-decoration: underline; text-underline-offset: 2px; }
 
+$rail-width: 260px;
+$rail-gap: 2rem;
+$hero-max-width: 240px;
+$hero-radius: 14px;
+$hero-shadow: 0 10px 24px rgba(0,0,0,.12);
+
+/* 正文舒适行宽与排版 */
+article {
+  max-width: 72ch;
+  line-height: 1.7;
+  word-wrap: break-word;
+}
+
+/* 仅在宽屏时给右栏让出空间；中等屏不挤压正文 */
+@media (min-width: 1300px) {
+  article { padding-right: calc(#{$rail-width} + #{$rail-gap}); }
+}
+
+/* Graph 与首图 */
+#graph-container,
+.graph-view,
+.graph,
+.right-sidebar .graph,
+aside.right .graph,
+aside.sidebar-right .graph {
+  position: sticky;
+  top: 6rem;
+  margin-top: var(--hero-space, 0);
+}
+
+.rail-hero {
+  position: fixed;
+  right: $rail-gap;
+  top: 6rem;
+  max-width: min(#{$hero-max-width}, #{$rail-width});
+  width: 100%;
+  height: auto;
+  border-radius: $hero-radius;
+  box-shadow: $hero-shadow;
+  display: block;
+  z-index: 2;
+  aspect-ratio: 1 / 1;
+}
+
+/* Graph 与图片的垂直间距 */
+:root { --hero-space: 300px; }
+
+/* 正文内其他图片 */
+article img:not(.rail-hero) {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+}
+
+/* 窄屏回退 */
+@media (max-width: 1100px) {
+  article { padding-right: 0; max-width: 100%; }
+  .rail-hero { position: static; max-width: 100%; box-shadow: none; margin-bottom: 1rem; }
+  #graph-container,
+  .graph-view,
+  .graph,
+  .right-sidebar .graph,
+  aside.right .graph,
+  aside.sidebar-right .graph { position: static; margin-top: 0; }
+  :root { --hero-space: 0; }
+}

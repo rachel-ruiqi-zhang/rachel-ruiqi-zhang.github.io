@@ -1,6 +1,8 @@
 ---
 title: Welcome to my site!
 ---
+<img class="rail-hero" src="https://github.com/user-attachments/assets/a1877d9d-9e81-4c10-a883-a409e1d69fbf" alt="me">
+
    Hi, I'm Rachel (Ruiqi) Zhang. I’m a language and communication specialist with a focus on translation, interpreting, and content development across cultural and linguistic boundaries. With a foundation in English Studies from Beijing Language and Culture University and current postgraduate study in Literature and Modernity at the University of Edinburgh, I work at the intersection of language, media, and meaning — helping ideas travel fluently across borders.  
    
    My professional experience spans English–Mandarin translation for international theatre productions — twice I have worked as an interpreter, one for Matthew Bourne's *Romeo and Juliet*, one for *The School of Rock*; translating and localising content for print and digital media as an intern for Global Times section in People's Daily, and refining AI-generated transcriptions for clarity and accuracy at Andovar. 
