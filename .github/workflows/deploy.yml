@@ -1,8 +1,8 @@
 name: Deploy Quartz site to GitHub Pages
 
 on:
-  push:              # 任何分支推送都触发，避免漏触发
-  workflow_dispatch: # 也可在 Actions 页面手动触发
+  push:
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -16,19 +16,20 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
-          node-version: 20     # LTS，CI 更稳
+          node-version: '22'          # ← 升级到 Node 22
           cache: npm
+      - name: Upgrade npm to 10.9.2+
+        run: npm i -g npm@^10.9.2     # ← 升级 npm
       - name: Install deps
         run: npm ci
       - name: Build Quartz
-        run: npx -y quartz@latest build   # 关键：改成 npx -y quartz@latest
+        run: npx -y quartz@latest build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -37,7 +38,6 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    timeout-minutes: 10
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
