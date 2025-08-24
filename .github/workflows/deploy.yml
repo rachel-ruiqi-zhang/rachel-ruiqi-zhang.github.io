@@ -2,6 +2,7 @@ name: Deploy Quartz site to GitHub Pages
 
 on:
   push:
+    branches: [v4]
   workflow_dispatch:
 
 permissions:
@@ -10,26 +11,23 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages-${{ github.ref }}
+  group: pages
   cancel-in-progress: true
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
-          node-version: '22'          # ← 升级到 Node 22
-          cache: npm
-      - name: Upgrade npm to 10.9.2+
-        run: npm i -g npm@^10.9.2     # ← 升级 npm
-      - name: Install deps
+          node-version: 22
+      - name: Install Dependencies
         run: npm ci
       - name: Build Quartz
-        run: npx -y @jackyzha0/quartz@latest build
+        run: node quartz/quartz.mjs build   
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -42,6 +40,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - id: deployment
+      - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
 
