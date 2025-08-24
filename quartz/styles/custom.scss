@@ -79,17 +79,20 @@ header, .header, footer { background: var(--bg); border: 0; }
 .explorer li { margin: .12rem 0; }
 .explorer summary, .explorer .folder > a, .explorer .folder-title { font-weight: 600 !important; }
 
+/* Brand title: bigger & bolder (CSS replacement version) */
 .page-title a {
   display: inline-block;
-  font-size: 0 !important;
-  line-height: 1.2;
+  font-size: 0 !important; /* hide original text */
+  line-height: 1.1;
+  text-decoration: none;
 }
 .page-title a::after {
   content: "Rachel's Site";
-  font-size: 1.75rem;
+  font-size: 2.25rem;      /* ↑ 调大 */
+  font-weight: 700;        /* ↑ 加粗 */
   font-family: Garamond, "Times New Roman", Georgia, serif;
-  font-weight: 500;
-  letter-spacing: .2px;
+  letter-spacing: .3px;
   color: inherit;
 }
+.page-title a:hover::after { text-decoration: underline; text-underline-offset: 2px; }
 
