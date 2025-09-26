@@ -12,4 +12,10 @@ Welcome to the Mind!
 Words don't always find my voice.
 But don't get too close—
 some secrets prefer the dark.
+
+4
+Beneath the beehive,
+flesh and blood thrive.
+Thus've been revived—
+the dim and glow of time. 
 </pre>

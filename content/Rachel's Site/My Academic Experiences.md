@@ -1,7 +1,6 @@
-- **The University of Edinburgh** (_Sep 2024 – Nov 2025, expected_)  
+- **The University of Edinburgh** (_Sep 2024 – Aug 2025_)  
 	MSc in Literature and Modernity: 1900 – Present  
 	Dissertation: From Voice to Void: Beckett’s Acoustic Dramaturgy and the Construction of Existential Isolation Across Media 
-	- *I am currently completing this programme*
 
 - **Beijing Language and Culture University** (_Sep 2020 – Jun 2024_)  
 	Bachelor of Arts in English Studies
