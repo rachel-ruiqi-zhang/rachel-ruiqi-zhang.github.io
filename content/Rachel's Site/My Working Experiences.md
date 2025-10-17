@@ -1,4 +1,10 @@
 
+- **Freelance Transcription Specialist** - ElevenLabs (*Sep 2025 - present*)
+	- Produced and reviewed highly accurate transcripts for a range of content
+	- Followed specific formatting rules and timing standards to complete competitive tasks
+	- Strengthened attention to detail and commitment to linguistic accuracy
+	- Worked independently and delivered high-quality work on time
+
 - **Transcription & Data Quality Reviewer** – Andovar (_Dec 2024 –_ _Jan 2025_)
 	- Audited and refined AI-generated transcriptions for 864 minutes of video content, improving linguistic accuracy and contextual clarity for final client deliverables  
 	- Rectified an average of 10 grammatical, terminological, and punctuation errors per video to ensure transcripts were publication-ready and met quality standards
@@ -18,4 +24,4 @@
 	- Participated in the coverage of various cultural activities to collect photos, videos, conduct interviews, and gather other materials at event sites for subsequent reporting and editing purposes
 	- Produced the briefs covering a wide range of topics, including sports, television culture, exhibitions, and performances, providing content that engaged both domestic and international audiences
 
-  I have had multiple tutoring experiences, teaching kids English from kindergarten level to junior school. During my undergraduate years, I have also worked as a teaching assistant for **Western Classics Reading Course**. My responsibilities were to grad student assignments, provide feedback on student performances, and participate in final exam grading.
+ I've also had multiple tutoring experiences, teaching English to children from kindergarten level to junior school level. My dip into the educational field started during my undergraduate years, when I worked as a teaching assistant for a course titled **Western Classics Reading**. My responsibilities included grading student assignments, provide feedback on their performances, and assisting in the final exam grading.
