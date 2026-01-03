@@ -1,5 +1,5 @@
 
-- **Freelance Transcription Specialist** - ElevenLabs (*Sep 2025 - present*)
+- **Freelance Transcription Specialist** - ElevenLabs (*Sep 2025 - Dec 2025*)
 	- Produced and reviewed highly accurate transcripts for a range of content
 	- Followed specific formatting rules and timing standards to complete competitive tasks
 	- Strengthened attention to detail and commitment to linguistic accuracy
