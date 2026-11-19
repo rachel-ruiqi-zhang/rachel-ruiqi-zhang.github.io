@@ -1,4 +1,12 @@
 
+- **Editorial Assistant** - Springer Nature *(Jan 2026 - Present)*
+	- Manage the editorial workflow for academic book titles and series, overseeing projects through manuscript development, production handover, and post-publication.  
+	- Coordinate with authors and editors throughout the content development process, providing guidance on editorial procedures, house style, and manuscript preparation.  
+	- Manage editorial databases and systems, maintaining accurate records and ensuring efficient workflow administration.  
+	- Monitor publication schedules and coordinate with production teams and external vendors to ensure timely delivery of titles in line with agreed deadlines.  
+	- Collaborate with cross-functional teams across different Centers of Excellence, including Production, Open Access, Editorial Rights, and Author Services, to facilitate smooth publication processes.  
+	- Handle day-to-day editorial administration and independently manage assigned book series and titles to support the delivery of editorial projects and maintain efficient day-to-day operations.
+
 - **Freelance Transcription Specialist** - ElevenLabs (*Sep 2025 - Dec 2025*)
 	- Produced and reviewed highly accurate transcripts for a range of content
 	- Followed specific formatting rules and timing standards to complete competitive tasks
